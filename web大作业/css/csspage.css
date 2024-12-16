@@ -1,0 +1,229 @@
+.css-container{
+    display: flex;
+    position: relative;
+    left: 140px;
+    top: 30px;
+    height: 90vh;
+    width: 1900px;
+    /* border: 1px solid; */
+    padding: 20px;
+}
+.css-container .card-animation{
+  
+    
+    width: 1500px;
+    height: 400px;
+    /* padding-bottom:40px ; */
+    border-bottom: 2px solid #695CFE;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+.css-container .card-animation p{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    font-family: "楷体";
+    font-weight: 800;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+.css-container .card-animation .card-item{
+    text-align: center;
+    float: left; 
+    width: 400px;
+    height: 300px; 
+    background-color: #ccc; 
+    margin-top:20px ;
+    margin-left:65px; 
+}
+.css-container .card-animation .card-item:nth-child(3n)
+{
+    margin-right: 0;
+}
+.card-item{
+    position: relative;
+    overflow: hidden;
+}
+.css-container .card-animation .card-item .card-img img{
+    width: 400px;
+    height: 300px;
+}
+.animate-card1 .card-img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  .animate-card1 .card-hover1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45px 20px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .animate-card1:hover .card-img {
+    transform: scale(1.2);
+  }
+  .animate-card1:hover .card-hover1 {
+    top: 0;
+  }
+  .animate-card2 .card-img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  .animate-card2 {
+    perspective: 500px;
+  }
+  .animate-card2 .card-hover2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45px 20px 20px;
+    transform: rotateX(80deg);
+    transform-origin: center top 0;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  .animate-card2:hover .card-img {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+  .animate-card2:hover .card-hover2 {
+    transform: none;
+  }
+  .animate-card3 .card-img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+.animate-card3 .card-hover3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+.animate-card3:hover .card-img{
+  transform: scale(1.2);
+}
+.animate-card3:hover .card-hover3{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 45px 20px 20px;
+}
+.css-animation{
+  top: 450px;
+  left: 200px;
+  position: absolute;
+  /* border: 1px solid; */
+  margin: 0 auto;
+  width: 1500px;
+  height: 600px;
+}
+.css-animation p{
+  text-align: center;
+  font-size: 35px;
+  font-family: "楷体";
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+.css-animation .css-animation-container{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1px solid;
+  height: 500px;
+  width: 1200px;
+  margin: 20px auto;
+
+}
+.css-animation-item1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css-animation-item2 { 
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css-animation-item3 { 
+  grid-area: 2 / 1 / 3 / 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css-animation-item4 { 
+  grid-area: 2 / 2 / 3 / 3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate{
+  background-color: var(--text-color);
+  width: 150px;
+  height: 150px;
+  animation: rotate 2s  infinite;
+  transition: all 0.5s ease;
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+.fadein{
+  background-color: var(--text-color);
+  width: 150px;
+  height: 150px;
+  animation: fadein 2s  infinite;
+  transition: all 0.5s ease;
+}
+@keyframes fadein{
+  0%,100%{opacity: 0;}
+  50%{opacity: 1;}
+}
+.pulsing{
+  background-color: var(--text-color);
+  width: 150px;
+  height: 150px;
+  animation: pulsing 2s  infinite;
+  transition: all 0.5s ease;
+}
+@keyframes pulsing{
+  0%,100%{transform: scale(1);}
+  50%{transform: scale(1.25);}
+}
+.slide{
+  background-color: var(--text-color);
+  width: 150px;
+  height: 150px;
+  animation: slide 2s  infinite;
+  transition: all 0.5s ease;
+}
+@keyframes slide{
+  0%,100%{transform: translateX(0);}
+  50%{transform: translateX(50%);}
+}

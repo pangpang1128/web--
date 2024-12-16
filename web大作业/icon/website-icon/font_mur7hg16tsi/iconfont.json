@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "128958",
+      "name": "git",
+      "font_class": "git",
+      "unicode": "e799",
+      "unicode_decimal": 59289
+    },
+    {
+      "icon_id": "5916400",
+      "name": "CSS",
+      "font_class": "CSS",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "7577321",
+      "name": "24gf-appsBig6",
+      "font_class": "24gf-appsBig6",
+      "unicode": "e9bf",
+      "unicode_decimal": 59839
+    },
+    {
+      "icon_id": "18772559",
+      "name": "flexible",
+      "font_class": "flexible",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "27239326",
+      "name": "mdnwebdocs",
+      "font_class": "mdnwebdocs",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "39788371",
+      "name": "Animation",
+      "font_class": "Animation",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

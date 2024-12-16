@@ -1,0 +1,131 @@
+.blog-shell{
+    margin: 30px;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    border:5px solid var(--body-color);
+    transition: all 0.5s ease;
+}
+.blog-head{
+    height: 240px;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.blog-head::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:var(--blogbackground) no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform-origin: 0 0;
+    transition: all 0.5s ease;
+    
+}
+.blog-cover {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    width: 150px;
+    z-index: 2;
+    border-radius: 500px;
+    border: 10px solid transparent;
+    box-shadow: 0 5px 10px #00000065;
+    animation: pulse-border 3s infinite;
+
+}
+/* 呼吸灯效果 */
+@keyframes pulse-border {
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: #695CFE;
+    }
+    100% {
+        border-color: white;
+    }
+}
+.blog-data
+{
+    padding: 100px 0 0 200px;
+    text-shadow: 0 0 20px var(--text-color);
+    transition: all 0.5s ease;
+}
+.blog-data .title1{
+    color: var(--primary-color);
+    font-size: 30px;
+    /* font: 800 50px; */
+    margin-bottom: 5px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.blog-data span{
+    position:absolute;
+    top: 200px;
+    font-size: 20px;
+    margin-left: 10px;
+    /* background: #ffe44c; */
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+
+}
+.blog-data .title2{
+    color: white;
+    font: 500 24px '';
+}
+.blog-foot{
+    line-height: 20px;
+    color: #444;
+}
+.blog-tags{
+    padding-left: 30px;
+    padding-top: 10px;
+    width: auto;
+    float: left;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.blog-tag{
+    background: var(--blogbackground-1);
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 14px;
+    margin-right: 4px;
+    line-height: 35px;
+    cursor: pointer;
+    transition: .7s;
+    transition: all 0.5s ease;
+}
+
+.blog-tag:hover{
+    background: lightblue;
+    color: #444;
+    transition: all 0.5s ease;
+}
+.blog-introduce{
+    text-indent: 2em;
+    font-size: 20px;
+    line-height: 1.5em;
+    width: auto;
+    height: auto;
+    float: left;
+}
+.blog-shell a{
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.blog-shell a:hover{
+    color: black;
+    font-size:25px;
+    transition: .5s;
+}
+
